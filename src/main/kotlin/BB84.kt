@@ -48,4 +48,7 @@ class BB84 {
         return indices.sorted().map { arr[it] }.toByteArray()
     }
 
+    fun removeBitsAtIndices(arr: ByteArray, indices:IntArray):ByteArray {
+        return arr.filterIndexed { i, _ -> !indices.contains(i) }.toByteArray()
+    }
 }
