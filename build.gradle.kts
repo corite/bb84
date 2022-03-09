@@ -14,7 +14,6 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("org.apache.commons:commons-math3:3.6.1") //for complex numbers
 }
 
 tasks.test {
